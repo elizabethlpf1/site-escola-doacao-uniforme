@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>"Uniforme Solidário"</title>
+    <style>
+        body {
+            margin-top: 1;
+            background-color: white;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        .header {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            background-color: wheat;
+        }
+
+        .menu {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 35px;
+            margin-left: 50%;
+        }
+
+        .principal {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: white;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .imgagem_escola {
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+       
+        @media only screen and (max-width: 1280px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imgagem_escola {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container header">
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="https://www.instagram.com/emefprofasebastianacobra?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@Instagram</a></li>
+            <li><a href="objetivo.html">Objetivo</a></li>
+            <li><a href="estoque.html">Uniforme</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imgagem_escola">
+            <img src="sebastianacobra1.jpg" alt="Imagem da escola">
+            <div class="infos">
+                <p><strong>R. dos Amores-Perfeitos, 95 - Jardim das Industrias-São José dos Campos/SP</strong></p>
+            </div>
+        </aside>
+
+        <section class="principal">
+            <p>Fale Conosco</p>
+            <form method="POST">
+                <table>
+                    <tr>
+                        <th><label for="nome">Nome:</label></th>
+                        <td><input type="text" name="nome" id="nome"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">E-mail:</label></th>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="msg">Mensagem:</label></th>
+                        <td><textarea name="msg" rows="5" cols="40">Digite sua mensagem</textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">Enviar</button></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </div>
+
+    <footer class="container footer">
+        <h3>Sejam Bem Vindos | Doação Solidária | Professora "Sebastiana Cobra"</h3>
+    </footer>
+
+</body>
+
+</html>
+
